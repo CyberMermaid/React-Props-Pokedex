@@ -18,7 +18,7 @@ class Pokecard extends React.Component {
     }
     render() {
       return (
-        <Pokemon/>
+        <Pokemon name={this.props.pokemon.name} image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.pokemon.id}.png`} type={this.props.pokemon.type} />
       );
     }
   }
